@@ -40,7 +40,7 @@ RETRIABLE_EXCEPTIONS = (httplib2.HttpLib2Error, IOError, httplib.NotConnected,
 
 RETRIABLE_STATUS_CODES = [500, 502, 503, 504]
 
-CLIENT_SECRETS_FILE = ['/content/drive/MyDrive/CREDITIOAL.json']
+CLIENT_SECRETS_FILE = ['{"installed":{"client_id":"171641998219-p4st98bn5e5e7k2btaqcvrroa4qlnfie.apps.googleusercontent.com","project_id":"rare-hub-348007","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost"]}}']
 
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 
