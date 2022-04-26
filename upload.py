@@ -166,7 +166,7 @@ if __name__ == '__main__':
 
   youtube = get_authenticated_service()
 
-  MEDIA_FOLDER_PATH = '/content/drive/MyDrive/TEST'
+  MEDIA_FOLDER_PATH =  raw_input('Enter VIDEOS FOLDER PATH you wish to upload:\n')
 
   for video_file in glob.glob(os.path.join(MEDIA_FOLDER_PATH, '*.*')):
 
