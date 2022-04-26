@@ -28,7 +28,7 @@ RETRIABLE_EXCEPTIONS = (httplib2.HttpLib2Error, IOError, httplib.NotConnected,
 
 RETRIABLE_STATUS_CODES = [500, 502, 503, 504]
 
-CLIENT_SECRETS_FILE = raw_input('Enter your client credential secret file path:\n')
+CLIENT_SECRETS_FILE = '/content/drive/MyDrive/CREDITIOAL.json'
 
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 API_SERVICE_NAME = 'youtube'
@@ -105,7 +105,7 @@ def resumable_upload(request):
 if __name__ == '__main__':
   youtube = get_authenticated_service()
 
-  MEDIA_FOLDER_PATH = raw_input('Enter VIDEOS FOLDER PATH you wish to upload:\n')
+  MEDIA_FOLDER_PATH = '/content/drive/MyDrive/TEST'
   for video_file in glob.glob(os.path.join(MEDIA_FOLDER_PATH, '*.*')):
     mimetypes.init()
     mimestart = mimetypes.guess_type(video_file)[0]
